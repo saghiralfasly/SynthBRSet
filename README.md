@@ -2,10 +2,10 @@
 ### [Paper](https://arxiv.org/abs/xxxx.xxxxx) | [Supplementary](https://arxiv.org/abs/xxxx.xxxxx) | [Website](https://saghiralfasly.github.io/OSRE/) | [Code](https://github.com/saghiralfasly/OSRE) | [Video demo](https://youtube.com) | [Bike.blend](https://googledrive.com) 
 
 
-This repository includes the code for generating the synthetic bike rotation dataset (SynthBRSet) using the 3D graphics software [Blender](https://www.blender.org/download/) . This dataset is used to train the bike rotation estimator OSRE proposed in ["**OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment**"](https://arxiv.org/abs/xxx)
+This repository includes the code for generating the synthetic bike rotation dataset (SynthBRSet) using the 3D graphics software [Blender](https://www.blender.org/download/). This dataset is used to train the bike rotation estimator OSRE proposed in ["**OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment**"](https://arxiv.org/abs/xxx)
 
 ## Overview
-The proposed algorithm leverages the power of 3D computer graphics to generate a large and diverse dataset for training bike rotation estimator for bike parking assessment. By using 3D graphics software, the algorithm is able to accurately annotate the rotations of bikes with respect to the parking spot area in two axes $y$ and $z$, which is crucial for training models for visual object-to-spot rotation estimation. Additionally, the ease of building the algorithm in Python made the generated dataset diverse with a wide range of variations in terms of parking space, lighting conditions, backgrounds, material textures, and colors, as well as objects and camera angles, to improve the generalization of the trained model. Overall, the use of 3D computer graphics allows for the efficient and precise generation of visual data for this task as well as for many potential tasks in computer vision.
+The proposed algorithm leverages the power of 3D computer graphics to generate a large and diverse dataset for training bike rotation estimators in bike parking assessment. By using 3D graphics software, the algorithm is able to accurately annotate the rotations of bikes with respect to the parking spot area in two axes $y$ and $z$, which is crucial for training models for visual object-to-spot rotation estimation. Additionally, the ease of building the algorithm in Python made the generated dataset diverse with a wide range of variations in terms of parking space, lighting conditions, backgrounds, material textures, and colors, as well as objects and camera angles, to improve the generalization of the trained model. Overall, the use of 3D computer graphics allows for the efficient and precise generation of visual data for this task as well as for many potential tasks in computer vision.
 
 <br/> 
 <p float="left"> 
@@ -22,7 +22,7 @@ In the first row of the bellow figure - back view, the bike's predicted rotation
 
 ## Code Setup
 
-The generated dataset will be in Yolo annotation formate. It involves the rotation annotation of each bike. The code creates COCO annotation as well.Overall, the dataset includes the **images** and **annotations** directories as in [SynthBPSet](https://github.com/saghiralfasly/SynthBRSet/tree/main/DATASET/SynthBPSet). It is expected to have the generated synthetic dataset in the following dirctory structure:
+The generated dataset will be in Yolo annotation format. It involves the rotation annotation of each bike. The code creates COCO annotation as well. Overall, the dataset includes the **images** and **annotations** directories as in [SynthBPSet](https://github.com/saghiralfasly/SynthBRSet/tree/main/DATASET/SynthBPSet). It is expected to have the generated synthetic dataset in the following directory structure:
 
 ```
 SynthBRSet
@@ -47,10 +47,10 @@ cls    x        y        w        h        θy       θz
 
 ```
 
-The ```cls``` represents the classes of the bike instance. We use three classes ```0, 1, and 2``` that represent ```parked, rotated, and fallen```, respectively. In more details, when a bike is rotated in $y$, it could be either $72$ or $-75^\circ$ ($-75^\circ$ represents $288^\circ$) in degrees. More details can be found in the code ```config``` and ```generateData.py```.
+The ```cls``` represents the classes of the bike instance. We use three classes ```0, 1, and 2``` that represent ```parked, rotated, and fallen```, respectively. In more detail, when a bike is rotated in $y$, it could be either $72$ or $-75^\circ$ ($-75^\circ$ represents $288^\circ$) in degrees. More details can be found in the code ```config``` and ```generateData.py```.
 
 #### Running the Code
-* Make sure you have downloaded and installed [Blender](https://www.blender.org/download/). Recommended to use linux as this repository is built and run on linux. 
+* Make sure you have downloaded and installed [Blender](https://www.blender.org/download/). Recommended to use Linux as this repository is built and run on Linux. 
 * Download the blender file [Bike.blend](https://googledrive.com), which contains all 3D objects, materials, and default settings. 
 * Locate ```Bike.blend``` in the same directory of ```SynthBRSet```.
 * Run the following command (supposing that the ```SynthBRSet``` is located in the same directory of ```Blender``` software):
@@ -60,8 +60,8 @@ The ```cls``` represents the classes of the bike instance. We use three classes 
 ```
 
 **Note**: 
-* Depending on the used python enviromenet, it may be required to install some missing packages.
-* This code with minor changes can be eaisly used to generate 3D-graphics-based visual dataset for several applications. 
+* Depending on the used python environment, it may be required to install some missing packages.
+* This code with minor changes can be easily used to generate a 3D-graphics-based visual dataset for several applications. 
 
 ## Citation 
 ```
