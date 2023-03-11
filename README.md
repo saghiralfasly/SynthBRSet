@@ -1,5 +1,5 @@
 # Synthetic Bike Rotation Dataset (SynthBRSet)
-### [Paper](https://arxiv.org/abs/2303.00725) | [Supplementary](https://arxiv.org/pdf/2303.00725.pdf) | [Website](https://saghiralfasly.github.io/OSRE/) | [Code](https://github.com/saghiralfasly/OSRE) | [Video demo](https://youtu.be/W-ifWAbRwpM) | [Bike.blend](https://googledrive.com) 
+### [Paper](https://arxiv.org/abs/2303.00725) | [Supplementary](https://arxiv.org/pdf/2303.00725.pdf) | [Website](https://saghiralfasly.github.io/OSRE-Project/) | [Code](https://github.com/saghiralfasly/OSRE) | [Video demo](https://youtu.be/W-ifWAbRwpM) | [Bike.blend](https://googledrive.com) 
 
 
 This repository includes the code for generating the synthetic bike rotation dataset (SynthBRSet) using the 3D graphics software [Blender](https://www.blender.org/download/). This dataset is used to train the bike rotation estimator OSRE proposed in ["**OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment**"](https://arxiv.org/abs/2303.00725)
