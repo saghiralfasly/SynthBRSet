@@ -2,7 +2,7 @@
 ### [Paper](https://arxiv.org/abs/2303.00725) | [Supplementary](https://arxiv.org/pdf/2303.00725.pdf) | [Website](https://saghiralfasly.github.io/OSRE-Project/) | [Code](https://github.com/saghiralfasly/OSRE) | [Video demo](https://youtu.be/W-ifWAbRwpM) | [Bike.blend](https://googledrive.com) 
 
 
-This repository includes the code for generating the synthetic bike rotation dataset (SynthBRSet) using the 3D graphics software [Blender](https://www.blender.org/download/). This dataset is used to train the bike rotation estimator OSRE proposed in ["**OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment**"](https://arxiv.org/abs/2303.00725)
+This repository includes the code for generating the synthetic bike rotation dataset (SynthBRSet) using the 3D graphics software [Blender](https://www.blender.org/download/). This dataset is used to train the bike rotation estimator OSRE proposed in ["**OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment**"](https://arxiv.org/abs/2303.00725), IEEE Transactions on Intelligent Transportation Systems.
 
 ## Overview
 The proposed algorithm leverages the power of 3D computer graphics to generate a large and diverse dataset for training bike rotation estimators in bike parking assessment. By using 3D graphics software, the algorithm is able to accurately annotate the rotations of bikes with respect to the parking spot area in two axes $y$ and $z$, which is crucial for training models for visual object-to-spot rotation estimation. Additionally, the ease of building the algorithm in Python made the generated dataset diverse with a wide range of variations in terms of parking space, lighting conditions, backgrounds, material textures, and colors, as well as objects and camera angles, to improve the generalization of the trained model. Overall, the use of 3D computer graphics allows for the efficient and precise generation of visual data for this task as well as for many potential tasks in computer vision.
@@ -66,9 +66,12 @@ The ```cls``` represents the classes of the bike instance. We use three classes 
 ## Citation 
 ```
 @article{alfasly2023OSRE,
-  title={OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment},
-  author={Saghir, Alfasly and Zaid, Al-huda and Saifullah, Bello and Ahmed, Elazab and Jian, Lu and Chen Xu},
-  journal={arXiv preprint arXiv:2303.00725},
-  year={2023}
-}
+  author={Alfasly, Saghir and Al-Huda, Zaid and Bello, Saifullahi Aminu and Elazab, Ahmed and Lu, Jian and Xu, Chen},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+  title={OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-10},
+  doi={10.1109/TITS.2023.3330786}}
 ```
